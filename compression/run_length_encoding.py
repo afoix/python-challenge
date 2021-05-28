@@ -1,4 +1,3 @@
-# example: aaaaaabbbcccccdeeebbbb
 from itertools import chain
 
 string = str(input('Insert your screen:'))
