@@ -22,9 +22,10 @@ for character in string:
     if character == previous_character or previous_character == '' :
         counter = counter+1
     else:
-        tuple_char_num = (character, counter)
-        lt_char_num = lt_char_num.append(tuple_char_num)
-        #print(tuple_char_num)
+        tuple_char_num = (previous_character, counter)
+        lt_char_num.append(tuple_char_num)
         counter = 1
     previous_character = character
+tuple_char_num = (previous_character, counter)
+lt_char_num.append(tuple_char_num)
 print(lt_char_num)
